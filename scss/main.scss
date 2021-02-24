@@ -1,0 +1,32 @@
+$offwhite: #F1ECE4;
+
+@font-face {
+    font-family: 'Tropikal';
+    src: url("../components/assets/tropikal-bold-webfont.woff") format("woff");
+    font-weight: bold;
+  }
+
+html {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', verdana, sans-serif;
+    font-size: 1.2rem;
+    width:100vw;
+    background-color: $offwhite;
+    background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    background-size: cover;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4 {
+    font-family: 'Tropikal', Georgia, serif;
+}
+
+.home__intro {
+    height:100vh;
+    
+}
