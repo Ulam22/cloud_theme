@@ -1,4 +1,10 @@
-$offwhite: #F1ECE4;
+$white: #F1ECE4;
+$black: #282725;
+$navy: #0E1C2F;
+$blue: #4C75F2; 
+$beige: #F5E0BF;
+$purple: #8C86AA;
+
 
 @font-face {
     font-family: 'Tropikal';
@@ -8,6 +14,7 @@ $offwhite: #F1ECE4;
 
 html {
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 body {
     margin:0;
@@ -15,10 +22,13 @@ body {
     font-family: 'Roboto', verdana, sans-serif;
     font-size: 1.2rem;
     width:100vw;
-    background-color: $offwhite;
-    background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
-    background-repeat: no-repeat;
-    background-blend-mode: overlay;
+    height:100vh;
+    background-color: $white;
+     background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+    /*  background-image: url("../components/assets/cloud-static-bg.png");
+   */
     background-size: cover;
     overflow-x: hidden;
 }
@@ -26,7 +36,72 @@ h1, h2, h3, h4 {
     font-family: 'Tropikal', Georgia, serif;
 }
 
-.home__intro {
-    height:100vh;
+a {
+    color: $black;
+}
+
+.btn {
+    color: $black;
+    padding:5px 20px 5px 20px;
+    margin: 0 5px  0 5px;
+border: 1px solid $black;
+border-radius: 8px;
+}
+.btn:hover {
     
+    background-color: $black;
+    padding:5px 20px 5px 20px;
+    margin: 0 5px  0 5px;
+border: 1px solid $black;
+border-radius: 8px;
+   color: $white !important; 
+
+
+}
+
+
+.animation-toggle {
+    text-align: end;
+    font-size: .8rem;
+    background: $white;
+    padding: 5px 0 5px 0;
+    
+}
+
+.navbar {
+    a{
+        padding:5px 20px 5px 20px;
+        margin: 0 5px 0 5px;
+    }
+    a:hover {
+        
+    color: $black;
+    text-decoration: none;
+    border-bottom: 1px solid $black;
+}
+ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+li {
+    display: inline-flex;
+    justify-content: space-between;
+}
+}
+
+
+.homepage {
+    height:90vh;
+    width: 70vw;
+    padding:0 20px 0 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .introduction {
+        width:60vw;
+        
+    }
+   
 }

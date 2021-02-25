@@ -7,6 +7,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,10 +16,13 @@ body {
   font-family: 'Roboto', verdana, sans-serif;
   font-size: 1.2rem;
   width: 100vw;
+  height: 100vh;
   background-color: #F1ECE4;
   background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
-  background-repeat: no-repeat;
   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  /*  background-image: url("../components/assets/cloud-static-bg.png");
+   */
   background-size: cover;
   overflow-x: hidden;
 }
@@ -27,7 +31,78 @@ h1, h2, h3, h4 {
   font-family: 'Tropikal', Georgia, serif;
 }
 
-.home__intro {
-  height: 100vh;
+a {
+  color: #282725;
+}
+
+.btn {
+  color: #282725;
+  padding: 5px 20px 5px 20px;
+  margin: 0 5px  0 5px;
+  border: 1px solid #282725;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #282725;
+  padding: 5px 20px 5px 20px;
+  margin: 0 5px  0 5px;
+  border: 1px solid #282725;
+  border-radius: 8px;
+  color: #F1ECE4 !important;
+}
+
+.animation-toggle {
+  text-align: end;
+  font-size: .8rem;
+  background: #F1ECE4;
+  padding: 5px 0 5px 0;
+}
+
+.navbar a {
+  padding: 5px 20px 5px 20px;
+  margin: 0 5px 0 5px;
+}
+
+.navbar a:hover {
+  color: #282725;
+  text-decoration: none;
+  border-bottom: 1px solid #282725;
+}
+
+.navbar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage {
+  height: 90vh;
+  width: 70vw;
+  padding: 0 20px 0 20px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.homepage .introduction {
+  width: 60vw;
 }
 /*# sourceMappingURL=main.css.map */
