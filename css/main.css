@@ -16,13 +16,13 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #282725;
+  background: #1d1e18;
   border-radius: 8px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #f5e0bf;
+  background: #2463a6;
   border-radius: 8px;
 }
 
@@ -57,7 +57,7 @@ h4 {
 }
 
 a {
-  color: #282725;
+  color: #1d1e18;
 }
 
 a:hover {
@@ -65,18 +65,18 @@ a:hover {
 }
 
 .btn {
-  color: #282725;
+  color: #2463a6;
   padding: 5px 20px;
   margin: 0 10px;
-  border: 1px solid #282725;
+  border: 1px solid #2463a6;
   border-radius: 8px;
 }
 
 .btn:hover {
-  background-color: #282725;
+  background-color: #2463a6;
   padding: 5px 20px;
   margin: 0 10px;
-  border: 1px solid #282725;
+  border: 1px solid #2463a6;
   color: #f1ece4 !important;
 }
 
@@ -87,6 +87,12 @@ a:hover {
   padding: 5px 0;
 }
 
+.bg-blur {
+  background-color: rgba(241, 236, 228, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
 .navbar a,
 footer a {
   padding: 5px 20px;
@@ -95,16 +101,16 @@ footer a {
 
 .navbar a:hover,
 footer a:hover {
-  color: #282725;
+  color: #2463a6;
   text-decoration: none;
-  border-bottom: 1px solid #282725;
+  border-bottom: 1px solid #2463a6;
 }
 
 .navbar a:focus,
 footer a:focus {
-  color: #282725;
+  color: #2463a6;
   text-decoration: none;
-  border-bottom: 1px solid #282725;
+  border-bottom: 1px solid #2463a6;
 }
 
 .navbar ul,
@@ -125,7 +131,7 @@ footer li {
 }
 
 .navbar {
-  font-family: 'Tropikal', Georgia, serif;
+  font-family: "Tropikal", Georgia, serif;
   font-size: 1.3rem;
 }
 
@@ -160,7 +166,7 @@ footer li {
 }
 
 .homepage .introduction {
-  width: 800px;
+  width: 55vw;
 }
 
 .homepage .scroll-description {
@@ -196,23 +202,26 @@ section {
 }
 
 .homepage__featured-work .card {
-  width: 450px;
+  width: 27rem;
   border-radius: 8px;
   min-height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 15px 0;
-  background-color: #f1ece4;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(241, 236, 228, 0.3);
+  border: transparent;
 }
 
 .homepage__featured-work .card__img {
-  background-color: #282725;
-  border-radius: 8px 8px 0 0;
+  background-color: #1d1e18;
+  border-radius: 8px;
 }
 
 .homepage__featured-work .card__img img {
-  border-radius: 8px 8px 0 0;
+  border-radius: 8px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -235,21 +244,21 @@ section {
 
 .homepage__featured-work .card__body .role {
   font-size: 1rem;
-  color: #A07D62;
-  font-weight: bold;
 }
 
 .homepage__featured-work .card__btn {
+  color: #2463a6;
   padding: 5px 15px;
-  border-top: 1px solid #282725;
+  border-top: 1px solid #2463a6;
+  text-align: center;
 }
 
 .homepage__featured-work .card__btn:hover {
-  border-radius: 0 0 8px 8px;
   padding: 5px 15px;
-  border-top: 1px solid #A07D62;
-  background-color: #A07D62;
+  border-top: 1px solid #2463a6;
+  background-color: #2463a6;
   color: #f1ece4;
+  border-radius: 0 0 8px 8px;
 }
 
 .homepage__featured-work .card a:hover {
@@ -257,7 +266,7 @@ section {
 }
 
 footer {
-  border-top: 1px solid #282725;
+  border-top: 1px solid #1d1e18;
   text-align: center;
   padding: 35px;
 }

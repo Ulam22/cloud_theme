@@ -1,7 +1,7 @@
 $white: #f1ece4;
-$black: #282725;
+$black: #1d1e18;
 $navy: #0e1c2f;
-$blue: #4c75f2;
+$blue: #2463a6;
 $beige: #f5e0bf;
 $purple: #8c86aa;
 $darkpurple: #696178;
@@ -31,7 +31,7 @@ $border: 1px solid $black;
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $beige;
+  background: $blue;
   border-radius: $radius;
 }
 
@@ -66,27 +66,26 @@ a {
   color: $black;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .btn {
-  color: $black;
+  color: $blue;
   padding: 5px 20px;
   margin: 0 10px;
-  border: 1px solid $black;
+  border: 1px solid $blue;
   border-radius: $radius;
 }
 .btn:hover {
-  background-color: $black;
+  background-color: $blue;
   padding: 5px 20px;
   margin: 0 10px;
-  border: 1px solid $black;
-  
+  border: 1px solid $blue;
+
   color: $white !important;
 }
 
 // ----------- Content ---------- //
-
 
 .animation-toggle {
   text-align: end;
@@ -94,7 +93,11 @@ a:hover {
   background: $white;
   padding: 5px 0;
 }
-
+.bg-blur {
+  background-color: rgba($color: #f1ece4, $alpha: 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
 .navbar,
 footer {
   a {
@@ -102,14 +105,14 @@ footer {
     margin: 0 10px;
   }
   a:hover {
-    color: $black;
+    color: #2463a6;
     text-decoration: none;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $blue;
   }
   a:focus {
-    color: $black;
+    color: #2463a6;
     text-decoration: none;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $blue;
   }
   ul {
     padding: 0;
@@ -122,9 +125,8 @@ footer {
   }
 }
 .navbar {
-    font-family: 'Tropikal', Georgia, serif;
-    font-size: 1.3rem;
-
+  font-family: "Tropikal", Georgia, serif;
+  font-size: 1.3rem;
 }
 .homepage {
   height: 40vh;
@@ -133,11 +135,11 @@ footer {
   margin: auto;
   display: flex;
   align-items: center;
-  
-.socials{
+
+  .socials {
     z-index: 2;
     font-size: 1.6rem;
-  
+
     .menu {
       display: block;
       position: fixed;
@@ -149,9 +151,9 @@ footer {
       list-style: none;
     }
   }
-  
+
   .introduction {
-    width: 800px;
+    width: 55vw;
   }
   .scroll-description {
     text-align: center;
@@ -161,7 +163,7 @@ section {
   padding: 25px 0;
 }
 .homepage__featured-work {
-    height: 60vh;
+  height: 60vh;
   h1 {
     text-align: center;
     margin: 50px 0;
@@ -173,17 +175,21 @@ section {
     justify-content: space-evenly;
   }
   .card {
-    width: 450px;
+    //width: 450px;
+    width: 27rem;
     border-radius: $radius;
     min-height: 100%;
     justify-content: space-between;
     margin: 15px 0;
-    background-color: $white;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba($color: #f1ece4, $alpha: 0.3);
+    border: transparent;
     &__img {
       background-color: $black;
-      border-radius: 8px 8px 0 0;
+      border-radius: $radius;
       img {
-        border-radius: 8px 8px 0 0;
+        border-radius: $radius;
         width: 100%;
         object-fit: cover;
       }
@@ -194,24 +200,25 @@ section {
       display: flex;
       flex-direction: column;
       p {
-          font-size: 1rem;
+        font-size: 1rem;
       }
       .role {
-          font-size: 1rem;
-          color: #A07D62;
-          font-weight: bold;
+        font-size: 1rem;
+        //font-weight: bold;
       }
     }
     &__btn {
+      color: $blue;
       padding: 5px 15px;
-      border-top: $border;
+      border-top: 1px solid $blue;
+      text-align: center;
     }
     &__btn:hover {
-      border-radius: 0 0 8px 8px;
       padding: 5px 15px;
-      border-top: 1px solid #A07D62;
-      background-color: #A07D62;
+      border-top: 1px solid $blue;
+      background-color: $blue;
       color: $white;
+      border-radius: 0 0 8px 8px;
     }
     a:hover {
       text-decoration: none;
@@ -220,8 +227,7 @@ section {
 }
 
 footer {
-    border-top: $border;
+  border-top: $border;
   text-align: center;
-  padding:35px;
+  padding: 35px;
 }
-
