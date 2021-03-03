@@ -248,6 +248,7 @@ section {
     a {
       margin: 15px;
       border: 1px solid $white;
+      border-radius: $radius;
     }
   }
 
@@ -267,10 +268,9 @@ section {
   .card {
     //width: 450px;
     width: 27rem;
-    border-radius: $radius;
+    border-radius: $radius !important;
     min-height: 100%;
     justify-content: space-between;
-
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     background-color: rgba($color: #f1ece4, $alpha: 0.3);

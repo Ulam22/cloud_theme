@@ -281,6 +281,7 @@ section {
 .homepage__featured-work .card-wrap a {
   margin: 15px;
   border: 1px solid #f1ece4;
+  border-radius: 8px;
 }
 
 .homepage__featured-work a:hover {
@@ -302,7 +303,7 @@ section {
 
 .homepage__featured-work .card {
   width: 27rem;
-  border-radius: 8px;
+  border-radius: 8px !important;
   min-height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
