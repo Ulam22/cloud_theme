@@ -13,6 +13,10 @@ $border: 1px solid $black;
   src: url("../components/assets/tropikal-bold-webfont.woff") format("woff");
   font-weight: bold;
 }
+@font-face {
+  font-family:"SISIL";
+  src:url("../components/assets/BAYBAYINSISIL.woff") format("woff");
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -150,7 +154,9 @@ a:hover {
 
   color: $white !important;
 }
-
+.logo-nav {
+  width:35px;
+}
 // ----------- Content ---------- //
 .animation-mode{
   display: flex;
@@ -164,10 +170,13 @@ p {
   margin-right:15px;
 }
 }
-.bg-blur {
+/* Not avail for firefox and IE .bg-blur {
   background-color: rgba($color: #f1ece4, $alpha: 0.2);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}*/
+.bg-blur {
+  background-color: $white;
 }
 .navbar,
 footer {
@@ -223,12 +232,7 @@ footer {
       text-align: right;
       list-style: none;
     }
-  .introduction {
-    width: 55vw;
-  }
-  .scroll-description {
-    text-align: center;
-  }
+  
 }
 section {
   padding: 25px 0;
@@ -238,7 +242,8 @@ section {
   h1 {
     text-align: center;
     margin: 50px 0;
-  }
+  } }
+
   .card-wrap {
     display: flex;
     flex-direction: row;
@@ -246,12 +251,11 @@ section {
     justify-content: space-evenly;
     margin-bottom: 5rem;
     a {
-      margin: 15px;
-      border: 1px solid $white;
-      border-radius: $radius;
+      text-decoration: none;
+    border: 1px solid #f1ece4;
+    border-radius: $radius;
+    margin-bottom: 2rem;
     }
-  }
-
   a:hover {
     text-decoration: none;
     border: 1px solid #f1ece4;
@@ -263,8 +267,9 @@ section {
       &__btn {
         color: $blue;
       }
-    }
+
   }
+}
   .card {
     //width: 450px;
     width: 27rem;
@@ -303,19 +308,103 @@ section {
       padding: 5px 15px;
       text-align: center;
       font-size: 1rem;
+      p {
+        align-items: flex-end;
+      }
     }
-  }
-}
+  }}
+
 
 footer {
   border-top: $border;
-  text-align: center;
   padding: 35px;
+ display: inline-flex;
+ width: 100vw;
+ align-items: baseline;
+ justify-content: center;
 }
 
-// About Me CSS Section
+// About Me Section
 
 #about {
   width:70vw;
   margin: auto;
+  .baybayin-animation {
+    justify-content: center;
+    display: flex;
+     .baybayin-header {
+    font-family: "SISIL", Georgia, 'Times New Roman', Times, serif;
+    font-size: 10rem;
+  }
+  }
+ 
+  .pronouns {
+    vertical-align:super;
+    font-size: 1rem;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  }
+ .socials {
+  
+   
+   ul {
+     padding:0;
+     margin:0;
+   }
+   .menu {
+    display: block;
+    right: 0;
+    bottom: calc(20% - 5em);
+    li{
+       text-align: center;
+    }
+   /*.socials-text {
+     text-transform: uppercase;
+     transform: rotate(90deg);
+   }*/
+    .devpost-icon {
+      width:36px;
+    }
+   }
+ }
+ .card-wrap {
+ a:hover {
+  .mini-card {
+    box-shadow: 0 0 10px 2px rgba(187, 164, 128, 0.1);
+    background-color: rgba($color: #ffffff, $alpha: 0.6);
+  
 }
+ } }
+ .mini-card {
+  //width: 450px;
+  width: 15rem;
+  border-radius: $radius !important;
+  min-height: 100%;
+  
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba($color: #f1ece4, $alpha: 0.3);
+  border: transparent;
+
+  &__img {
+    border-radius: $radius;
+    img {
+      border-radius: 8px 8px 0 0;
+      width: 100%;
+      object-fit: cover;
+    }
+    
+  }
+p {
+  text-align: center;
+}
+  .smaller-icon {
+width: 70px;
+display: flex;
+margin: auto;  
+padding-top:15px; }
+
+}}
+ .pfp {
+    width:20vw;
+    margin: auto;
+  }

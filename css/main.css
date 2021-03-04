@@ -4,6 +4,11 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "SISIL";
+  src: url("../components/assets/BAYBAYINSISIL.woff") format("woff");
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -143,6 +148,10 @@ a:hover {
   color: #f1ece4 !important;
 }
 
+.logo-nav {
+  width: 35px;
+}
+
 .animation-mode {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -163,10 +172,13 @@ a:hover {
   margin-right: 15px;
 }
 
-.bg-blur {
-  background-color: rgba(241, 236, 228, 0.2);
+/* Not avail for firefox and IE .bg-blur {
+  background-color: rgba($color: #f1ece4, $alpha: 0.2);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+}*/
+.bg-blur {
+  background-color: #f1ece4;
 }
 
 .navbar a,
@@ -241,14 +253,6 @@ footer li {
   list-style: none;
 }
 
-.socials .introduction {
-  width: 55vw;
-}
-
-.socials .scroll-description {
-  text-align: center;
-}
-
 section {
   padding: 25px 0;
 }
@@ -262,7 +266,7 @@ section {
   margin: 50px 0;
 }
 
-.homepage__featured-work .card-wrap {
+.card-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -278,30 +282,31 @@ section {
   margin-bottom: 5rem;
 }
 
-.homepage__featured-work .card-wrap a {
-  margin: 15px;
+.card-wrap a {
+  text-decoration: none;
   border: 1px solid #f1ece4;
   border-radius: 8px;
+  margin-bottom: 2rem;
 }
 
-.homepage__featured-work a:hover {
+.card-wrap a:hover {
   text-decoration: none;
   border: 1px solid #f1ece4;
   color: #1d1e18;
   border-radius: 8px;
 }
 
-.homepage__featured-work a:hover .card {
+.card-wrap a:hover .card {
   -webkit-box-shadow: 0 0 10px 2px rgba(187, 164, 128, 0.1);
           box-shadow: 0 0 10px 2px rgba(187, 164, 128, 0.1);
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.homepage__featured-work a:hover .card__btn {
+.card-wrap a:hover .card__btn {
   color: #2463a6;
 }
 
-.homepage__featured-work .card {
+.card-wrap .card {
   width: 27rem;
   border-radius: 8px !important;
   min-height: 100%;
@@ -314,19 +319,19 @@ section {
   border: transparent;
 }
 
-.homepage__featured-work .card__img {
+.card-wrap .card__img {
   background-color: #1d1e18;
   border-radius: 8px;
 }
 
-.homepage__featured-work .card__img img {
+.card-wrap .card__img img {
   border-radius: 8px 8px 0 0;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.homepage__featured-work .card__body {
+.card-wrap .card__body {
   padding: 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,29 +342,132 @@ section {
           flex-direction: column;
 }
 
-.homepage__featured-work .card__body p {
+.card-wrap .card__body p {
   font-size: 1rem;
 }
 
-.homepage__featured-work .card__body .role {
+.card-wrap .card__body .role {
   font-size: 1rem;
 }
 
-.homepage__featured-work .card__btn {
+.card-wrap .card__btn {
   color: #1d1e18;
   padding: 5px 15px;
   text-align: center;
   font-size: 1rem;
 }
 
+.card-wrap .card__btn p {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
 footer {
   border-top: 1px solid #1d1e18;
-  text-align: center;
   padding: 35px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100vw;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #about {
   width: 70vw;
+  margin: auto;
+}
+
+#about .baybayin-animation {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about .baybayin-animation .baybayin-header {
+  font-family: "SISIL", Georgia, 'Times New Roman', Times, serif;
+  font-size: 10rem;
+}
+
+#about .pronouns {
+  vertical-align: super;
+  font-size: 1rem;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#about .socials ul {
+  padding: 0;
+  margin: 0;
+}
+
+#about .socials .menu {
+  display: block;
+  right: 0;
+  bottom: calc(20% - 5em);
+  /*.socials-text {
+     text-transform: uppercase;
+     transform: rotate(90deg);
+   }*/
+}
+
+#about .socials .menu li {
+  text-align: center;
+}
+
+#about .socials .menu .devpost-icon {
+  width: 36px;
+}
+
+#about .card-wrap a:hover .mini-card {
+  -webkit-box-shadow: 0 0 10px 2px rgba(187, 164, 128, 0.1);
+          box-shadow: 0 0 10px 2px rgba(187, 164, 128, 0.1);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#about .mini-card {
+  width: 15rem;
+  border-radius: 8px !important;
+  min-height: 100%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: rgba(241, 236, 228, 0.3);
+  border: transparent;
+}
+
+#about .mini-card__img {
+  border-radius: 8px;
+}
+
+#about .mini-card__img img {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about .mini-card p {
+  text-align: center;
+}
+
+#about .mini-card .smaller-icon {
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.pfp {
+  width: 20vw;
   margin: auto;
 }
 /*# sourceMappingURL=main.css.map */
