@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Tropikal";
+  src: url("../components/assets/tropikal-bold-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SISIL";
+  src: url("../components/assets/BAYBAYINSISIL.woff") format("woff");
+}
+/*# sourceMappingURL=global.css.map */

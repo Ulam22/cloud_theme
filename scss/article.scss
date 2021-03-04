@@ -1,0 +1,65 @@
+
+    $white: #f1ece4;
+    $black: #1d1e18;
+    $navy: #0e1c2f;
+    $blue: #2463a6;
+    $beige: #f5e0bf;
+    $purple: #8c86aa;
+    $darkpurple: #696178;
+    $radius: 8px;
+    $border: 1px solid $black;
+
+    article {
+display: flex;
+flex-direction: column;
+justify-content: center;
+    }
+
+.progress {
+    background: $purple;
+}
+article {
+    //I dont know why it wont center, center placeholder for now
+    padding-left:30px;
+}
+  .article__description-card {
+    width: 90%;
+    border-radius: $radius !important;
+    min-height: 100%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: rgba($color: #f1ece4, $alpha: 0.5);
+    border: 1px solid $white;
+
+    &__img {
+      background-color: $black;
+      border-radius: $radius;
+      img {
+        border-radius: 8px 8px 0 0;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__card-body {
+      padding: 15px 30px;
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 1rem;
+      }
+      .role {
+        font-size: 1rem;
+        //font-weight: bold;
+      }
+    }
+    &__btn {
+      color: $black;
+      padding: 5px 15px;
+      text-align: center;
+      font-size: 1rem;
+      p {
+        align-items: flex-end;
+      }
+    }
+  }

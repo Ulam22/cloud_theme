@@ -1,0 +1,20 @@
+//_library.scss
+$white: #f1ece4 !default;
+$black: #1d1e18 !default;
+$navy: #0e1c2f !default;
+$blue: #2463a6 !default;
+$beige: #f5e0bf !default;
+$purple: #8c86aa !default;
+$darkpurple: #696178 !default;
+$radius: 8px !default;
+$border: 1px solid $black !default;
+
+@font-face {
+  font-family: "Tropikal";
+  src: url("../components/assets/tropikal-bold-webfont.woff") format("woff");
+  font-weight: bold;
+}
+@font-face {
+  font-family:"SISIL";
+  src:url("../components/assets/BAYBAYINSISIL.woff") format("woff");
+}
