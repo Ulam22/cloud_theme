@@ -1,3 +1,8 @@
+.progress {
+  background: #8c86aa;
+  height: 5px;
+}
+
 article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,16 +16,36 @@ article {
           justify-content: center;
 }
 
-.progress {
-  background: #8c86aa;
+article .article__intro .article-title {
+  text-align: center;
 }
 
-article {
-  padding-left: 30px;
+article .article__img-banner {
+  width: 100vw;
+  background: #8c86aa;
+  margin-bottom: 2rem;
+}
+
+article .article__img-banner img {
+  width: 100%;
+  height: 35vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+article .section-container {
+  height: 40vh;
+}
+
+article .article__text-focus {
+  width: 50vw;
+  margin: auto;
 }
 
 .article__description-card {
-  width: 90%;
+  width: 50vw;
+  margin: auto;
+  padding: 2rem;
   border-radius: 8px !important;
   min-height: 100%;
   backdrop-filter: blur(5px);
@@ -29,34 +54,33 @@ article {
   border: 1px solid #f1ece4;
 }
 
-.article__description-card__img {
-  background-color: #1d1e18;
-  border-radius: 8px;
+.article__description-card h5 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #2463a6;
 }
 
-.article__description-card__img img {
-  border-radius: 8px 8px 0 0;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.article__description-card__card-body {
+.article__description-card .article__card-body {
   padding: 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.article__description-card__card-body p {
+.article__description-card .article__card-body p {
   font-size: 1rem;
 }
 
-.article__description-card__card-body .role {
+.article__description-card .article__card-body .role {
   font-size: 1rem;
 }
 
@@ -71,5 +95,22 @@ article {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.goals-list li {
+  list-style: none;
+}
+
+.goals-list li::before {
+  content: "\22B3";
+  margin-right: 5px;
 }
 /*# sourceMappingURL=article.css.map */
