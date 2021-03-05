@@ -19,7 +19,7 @@ article {
   flex-direction: column;
   justify-content: center;
   .article__intro {
-    
+    padding:0;
     .article-title {
     text-align: center;
     
@@ -31,12 +31,12 @@ article {
 margin-bottom: 2rem;
     img {
       width: 100%;
-      height: 35vh;
+      height: 40vh;
       object-fit: cover;
     }
   }
   .section-container {
-    height: 40vh;
+    height: 45vh;
   }
   
   .article__text-focus {
@@ -101,4 +101,11 @@ margin-bottom: 2rem;
     content: "\22B3";
     margin-right: 5px;
   }
+}
+
+.pagination {
+  border-top:$border;
+  display: flex;
+  justify-content: space-between;
+  padding:2rem;
 }
