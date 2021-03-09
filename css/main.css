@@ -469,6 +469,9 @@ footer {
   margin: auto;
   padding:10px 0;
 }
+#about h3 {
+  text-align: center;
+}
 
 .pfp {
   width: 20vw;
