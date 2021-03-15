@@ -28,6 +28,7 @@
     />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/main.css" />
     <link rel="stylesheet" href="../css/article.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
@@ -86,7 +87,15 @@
     <main>
       <article>
         <section class="article__intro">
-         
+          <div class="video-center">
+            <figure>
+              <video width="800" height="480" controls>
+            <source src="./assets/onedown-runthru.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <figcaption>A short overview video of the final look for one-down.com</figcaption>
+            </figure>
+           </div>
           <div class="article__decription">    
             <div class="article__description-card">
                 <h2 class="article-title">One Down Internship</h2>
@@ -102,7 +111,7 @@
                
                    
                   <h6>
-                  <span class="text-bold">Tools: </span> Figma, Squarespace
+                  <span class="text-bold">Tools: </span> Figma, Google Analytics, Squarespace
                 </h6> <h6>
                   <span class="text-bold">Location: </span> Remote
                 </h6>
@@ -111,6 +120,7 @@
                
               </div> <div class="filter">
                   <h6 class="tag">Web Design</h6>
+                  <h6 class="tag">UI Design</h6>
                   <h6 class="tag">Brand Identity</h6>
               </div>
             </div>
@@ -118,102 +128,116 @@
           </div>
         </section>
         <hr>
-        <section class="article__text-focus">
-          <div class="section-list">
-            <h2>Problem</h2>
-            <ul>
-                <li>People were spending less than 4 seconds on the site</li>
-                <li>Initial web designer had no experience using Squarespace or knowledge of web design</li> 
-             </ul>
-             </div>
-          <div class="section-container">
-              <h2>Goals</h2>
-              <ul class="todo">
-               
-                <li>Increase session counts in Users Flow</li>
-                <li>Setup the home page to become a landing page</li>
-                <li>Make the Breaking the Tabo social campaign easily accessible</li>
-                <li>Make the site be on par with other culture and society media websites</li> 
-             </ul>
-             </div>  
-          
-        </section>
-        <section class="article__text-focus">
+         <section class="article__text-focus">
             <h1>Who's One Down?</h1>
      <p>One Down is a Filipino-American multimedia publishing platform on the rise. With a growing Facebook following of 47,000+ people, this company wanted to redesign their website to have an official website that was on par with other leading cultural media publishers like mitú, and buzzfeed, . The stakeholders I communicated with on a weekly basis were Grazian Moreno (Director of Marketing and Brand Partnerships) and Leo Albea (Co-Founder & Creative Director).</p>  
           
         </section>
-              
- </section> 
-    
-     <h1>Before Changes</h1>
+        <section class="article__text-focus">
+          <br>
+          <div class="section-container">
+            <h2>Problem</h2>
+            <ul>
+                <li>People were spending a maximum average of 10 seconds on the site </li>
+                <li>People were dropping off at the home page</li>
+                <li>The site didn't quite match One Down's visual brand</li> 
+             </ul>
+             </div>
+        </section>
+        <h1>Original website pain points</h1>
           <section class="article__img-banner-sm">
               
             <img
-            src="./assets/#"
-            alt="2021 brand colors"
+            src="./assets/homepage_navigation.png"
+            alt="Highlighting original navigation setup. The video did not load when I took this screenshot, which is why the photo is mostly black."
           />
         
             <img
-            src="./assets/#"
-            alt="all the brand components scrambled"
+            src="./assets/coconut_homepage.png"
+            alt="A snapshot image of the call to action button on the homepage after the video."
           />
+          <img
+          src="./assets/footer.png"
+          alt="A close look at the footer from the original website"
+        />
           </section>
+        <section class="article__text-focus">
+          <div class="section-container">
+              <h2>Goals for this project</h2>
+              <ul class="todo">
+               
+                <li>Increase session counts in Users Flow</li>
+                <li>Setup the home page to become a landing page</li>
+                <li>Make the site be on par with other culture and society media websites</li> 
+             </ul>
+             <p>Between the stakeholders and I, we determined that the site's Minimum Viable Product required the homepage, video, and article pages.</p>
+      
+             </div>  
+          
+        </section>
+       
+        <h1>Wireframes</h1>
+        <section class="article__img-banner-sm">
+            
+          <img
+          src="./assets/visguide1.png"
+          alt="A basic visual guide on how to understand the web design"  />
+      
+          <img
+          src="./assets/finalize.png"
+          alt=" "
+        />
+      
+        </section>
+ 
+    
+   
 <section class="article__text-focus">
     
      
     <div class="section-container">
         <h2>Challenges</h2>
-          <p>People are coming from Facebook to view the site, they aren’t actively searching for the website.</p>
-          <p>In the Videos section, my initial goal was to create a gallery view of all the media content One Down produced. However, I was sourcing these videos from Youtube and Facebook, which meant that the videos were squares or rectangles.</p>
-    <p>For the Editorial and Video sections of the site, I couldn't seem to find an option to make one section of the page a different color than the rest of the page, so I injected CSS thanks to the site’s Business plan features.</p>
+              <p>In the Videos section, my initial goal was to create a gallery view of all the media content One Down produced. However, I was sourcing these videos from Youtube and Facebook, which made the videos at different dimensions.</p>
+    <p>I had to quickly familiarize myself with Squarespace 7.0 because the website was running on this version. I initally drafted multiple web layouts thinking I would use all the features from Squarespace 7.1, but that was not the case. If I didn't update my wireframes, it would've costed the business $216 dollars to renew the plan and update the template base.</p>
     </div>
     
 </section>
-<section class="img-grid">
-    <div class="grid-wrap">
-      <div class="grid">
-          <div class="grid-body">
+<h1>Website snapshots</h1>
+<section class="article__img-banner-sm">
+    <img
+  src="./assets/one-down-landing.png"
+  alt="Landing page snapshot"
+/>
 
-          
-        <img src="./assets/#" alt="Sneek peek before theme reveal post" />
-      </div></div>
-      
-      <div class="grid"><div class="grid-body">
-        <img src="./assets/#" alt="Instagram Theme Reveal" />
-      </div></div>
-    
-      <div class="grid">  <div class="grid-body">
-        <img src="./assets/#" alt="Hackathon applications" />
-      </div>
+  <img
+  src="./assets/btt.png"
+  alt="Social Campaign page snapshot, 'Breaking the Tabo'"  />
 
-    </div>
-    </div>
-  </section>
-          
+  
+
+</section>
           <h1>As a result...</h1>
          <section class="article__text-focus">
           <div class="section-container">
             <h3>Accomplishments</h3>
             <ul class="todo-comp">
-              <li>Set brand voice guidelines</li>
-              <li>Defined HackBeanpot's persona</li>
-              <li>Developed user personas for Hackers, Collaborators, Judges, and Sponsors</li>
-            </ul>
+              <li>By redesigning the site’s Information
+                Architecture, average session duration rate
+                increased by 64% and the bounce rate
+                decreased by 23.8% in October and November</li>
+                <li>Aligned the website with the visual brand</li>
+              <li>Made the social campaign the "call to action" on the home page</li>
+              <li>Listed the recent and trending content on the home page so that viewers can visit other pages on the site.</li> 
+            </ul><p>For the Editorial and Video sections of the site, I couldn't seem to find an option to make one section of the page a different color than the rest of the page, so I injected CSS thanks to the site’s Business plan features.</p>
           </div>
         </section>
        
         <section class="article__text-focus">
-       <!--<h3>Impact</h3>
-         <ul class="todo-impact">
-            <li>Lorem</li>
-            <li>Lorem</li>
-        </ul>--> <h3>Takeaways</h3>
-        <p>Users are people who can think for themselves. Don’t assume what people are looking for, ask them.
+    <h3>Takeaways</h3>
+       
+        <p>I wish I did a user survey to hear from the people seeking out the One Down site. At the end of October, the visitors and user engagement didn’t match up with the big audience on their Facebook platform, but there was still progress! Based on the data from Google Analytics, people were actively browsing the site. The articles section was a hit, especially for the last article in the October Filipino American History Month series.
         </p>
-        <p>I wish I did a user survey to hear from the fans going to One Down’s site. At the end of October, the visitors and user engagement didn’t match up with the big audience on their Facebook platform, but there was still progress! Based on the data from Google Analytics, people were actively browsing the site. The articles section was a hit, especially for the last article in the October Filipino American History Month series.
-        </p>
-         <p>In addition to my work, I wanted to help Grazian better understand the Squarespace 7.0 site editor. As the temporary individual Web Designer for the media platform, I thought that this visual guide for the core team would be beneficial for future redesigns and feature changes. </p>
+         <p>In addition to my work, I wanted to help Grazian better understand the Squarespace 7.0 site editor. As the temporary individual Web Designer for the media platform, I thought that making a visual guide would help the core team in the future.</p>
               <ul>
                   <h4>What I learned</h4>
                   <li>I need to know how to effectively hand off a project</li>

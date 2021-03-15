@@ -14,22 +14,26 @@ $border: 1px solid $black;
 }
 
 article {
+  padding-top: 3em;
   display: flex;
   flex-direction: column;
-
+.video-center {
+      text-align: center;
+    }
   .article__intro {
     padding: 0;
     justify-content: center;
     .article-title {
       text-align: center;
     }
+    
   }
   .article__img-banner {
     width: 100vw;
     margin-bottom: 2rem;
     img {
       width: 100%;
-      height: 35vh;
+      
       object-fit: cover;
     }
   }
@@ -68,6 +72,8 @@ article {
   }
   .article__card-body {
     padding: 15px 30px;
+    width:80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -153,7 +159,8 @@ article {
 .filter {
   display: flex;
   justify-content: space-evenly;
-
+width:80%;
+margin: auto;
   .tag {
     padding: 0.5rem 1rem;
     border: 1px solid $purple;
@@ -195,5 +202,11 @@ article {
     margin:2rem 0;
 
   }
+}
+
+  figcaption {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: $darkpurple;
 }
 

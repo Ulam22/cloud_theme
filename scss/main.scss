@@ -1,3 +1,14 @@
+//_library.scss
+$white: #f1ece4 !default;
+$black: #1d1e18 !default;
+$navy: #0e1c2f !default;
+$blue: #2463a6 !default;
+$beige: #f5e0bf !default;
+$purple: #8c86aa !default;
+$darkpurple: #696178 !default;
+$radius: 8px !default;
+$border: 1px solid $black !default;
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -32,10 +43,10 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: $white;
-  background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
-  background-blend-mode: overlay;
+  background-image: url("../components/assets/cloud-static-bg.png");
   background-repeat: no-repeat;
-  // background-image: url("../components/assets/cloud-static-bg.png");
+  //  background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
+ 
 
   background-size: cover;
   overflow-x: hidden;
@@ -196,6 +207,10 @@ footer {
   margin: auto;
   display: flex;
   align-items: center;
+  .homepage__text {
+    width: 50em;
+    margin: auto;
+  }
 }
 
 .socials {
@@ -317,6 +332,7 @@ footer {
     }
     .about__intro {
       width: 50vw;
+
     }
     h3 {
       text-align: center;

@@ -1,14 +1,3 @@
-@font-face {
-  font-family: "Tropikal";
-  src: url("../components/assets/tropikal-bold-webfont.woff") format("woff");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "SISIL";
-  src: url("../components/assets/BAYBAYINSISIL.woff") format("woff");
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -45,8 +34,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #f1ece4;
-  background-image: url("https://media.giphy.com/media/3og0IyRiAsl1Pczi6Y/giphy.gif");
-  background-blend-mode: overlay;
+  background-image: url("../components/assets/cloud-static-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -77,8 +65,8 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -89,8 +77,8 @@ body {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -236,6 +224,11 @@ footer li {
           align-items: center;
 }
 
+.homepage .homepage__text {
+  width: 50em;
+  margin: auto;
+}
+
 .socials {
   z-index: 2;
   font-size: 1.6rem;
@@ -376,17 +369,13 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-      
 }
 
 #about {
   width: 70vw;
   margin: auto;
 }
-.about__intro {
-  width:50vw;
-  margin: auto;
-}
+
 #about .baybayin-animation {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -397,14 +386,22 @@ footer {
 }
 
 #about .baybayin-animation .baybayin-header {
-  font-family: "SISIL", Georgia, 'Times New Roman', Times, serif;
+  font-family: "SISIL", Georgia, "Times New Roman", Times, serif;
   font-size: 10rem;
+}
+
+#about .baybayin-animation .about__intro {
+  width: 50vw;
+}
+
+#about .baybayin-animation h3 {
+  text-align: center;
 }
 
 #about .pronouns {
   vertical-align: super;
   font-size: 1rem;
-  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #about .socials ul {
@@ -467,10 +464,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   margin: auto;
-  padding:10px 0;
-}
-#about h3 {
-  text-align: center;
+  padding: 10px 0;
 }
 
 .pfp {
