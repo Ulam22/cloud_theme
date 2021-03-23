@@ -407,3 +407,21 @@ footer {
   width: 20vw;
   margin: auto;
 }
+
+.homepage__CTA {
+  display: block;
+  border-top: 1px solid $darkpurple;
+  border-bottom: $border;
+  padding: 1rem;
+  margin-top:1em;
+  ul {
+    list-style: none;
+    padding-left:0;
+
+    li {
+      display: inline-block;
+      margin: 0 .5rem;
+  
+    }
+  }
+}

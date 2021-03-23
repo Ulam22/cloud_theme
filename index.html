@@ -64,6 +64,31 @@
               &#9728; Hello, my name's Shania!<br />
               I like to use my skills in UX/UI Design, Social Media Marketing, and Web Design & Development to support community-driven organizations.
             </h2>
+            <br>
+            <div class="homepage__CTA" id="rise2">
+              <h4 >Currently looking for remote Fall 2021 Internships</h4>
+             
+              <ul> 
+                <li>Send me a message</li>
+                <li><a href="mailto:ambros@simmons.edu">📧</a></li>
+                <li>
+                  <a href="https://instagram.com/isuratmo" target="_blank"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/Ulam22" target="_blank"
+                    ><i class="bi bi-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/sambros" target="_blank"
+                    ><i class="bi bi-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            
           </div>
         </div>
       
@@ -133,27 +158,6 @@
         </div>
       </section>
     </main>
-<footer>
-  <h4>Interested in working together?</h4>
-        <a href="mailto:ambros@simmons.edu">Send me a message 📧</a> 
-        <ul>
-          <li>
-            <a href="https://instagram.com/isuratmo" target="_blank"
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/Ulam22" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/in/sambros" target="_blank"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-    </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -175,9 +179,11 @@
         { opacity: 0, y: 100 },
         { duration: 1, opacity: 1, y: 0}
       );
+      
       gsap.fromTo(
-        ".logo-nav", 
-        {opacity: 0, y:-30}, {duration: 0.1,opacity:1, y:0}
+        "#rise2",
+        { opacity: 0, y: 60 },
+        { delay: 1, duration: 1, opacity: 1, y: 0}
       );
     </script>
   

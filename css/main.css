@@ -471,4 +471,22 @@ footer {
   width: 20vw;
   margin: auto;
 }
+
+.homepage__CTA {
+  display: block;
+  border-top: 1px solid #696178;
+  border-bottom: 1px solid #1d1e18;
+  padding: 1rem;
+  margin-top: 1em;
+}
+
+.homepage__CTA ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.homepage__CTA ul li {
+  display: inline-block;
+  margin: 0 .5rem;
+}
 /*# sourceMappingURL=main.css.map */
