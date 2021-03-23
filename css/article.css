@@ -41,7 +41,7 @@ article .article__img-banner img {
 }
 
 article .section-container {
-  height: 28vh;
+  margin: 2rem 0;
 }
 
 article h1 {
@@ -211,14 +211,16 @@ article .article__text-focus {
   margin: 0;
 }
 
-.todo li {
-  list-style-type: "\1F331";
+/*.todo {
+  li {
+    list-style-type: "\1F331"; //seedling
+  }
 }
-
-.todo-comp li {
-  list-style-type: "\2713";
-}
-
+.todo-comp {
+  li {
+    list-style-type: "\2713";
+  }
+}*/
 .todo-impact li {
   list-style-type: "\1F33C";
 }

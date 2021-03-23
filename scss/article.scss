@@ -38,7 +38,7 @@ article {
     }
   }
   .section-container {
-    height: 28vh;
+    margin: 2rem 0;
   }
   h1 {
     text-align: center;
@@ -172,7 +172,7 @@ margin: auto;
     }
   }
 }
-.todo {
+/*.todo {
   li {
     list-style-type: "\1F331"; //seedling
   }
@@ -181,7 +181,7 @@ margin: auto;
   li {
     list-style-type: "\2713";
   }
-}
+}*/
 
 .todo-impact {
   li {
