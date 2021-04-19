@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLSA | Brand Design</title>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/uma.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <div class="bg-blur">
+      
+        <nav class="navbar">
+            
+          
+            <img
+              src="./components/assets/icon.png"
+              class="logo-nav"
+              alt="personal brand logo"
+          />
+
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="nav-links">
+            <a href="#intro">Introduction</a>
+            <a href="#gallery">Logo Designs</a>
+            <a href="#socials">Socials</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+<div id="intro">
+
+    <div class="container">
+<div id="rise">
+     <h2 >
+        &#9728; Hello, my name's Shania!</h2>
+        <p>I like to use my skills in UX/UI Design, Social Media Marketing, and Web Design & Development to support community-driven organizations.
+    </p>
+</div>
+       
+    </div>
+    
+</div>
+<div id="gallery">
+   
+           
+    <h1>Logo Design</h1>
+    <div class="card-wrap">
+      <!-- card -->
+       <div class="card">
+        <div class="card__img">
+          <img src="./components/assets/init5.png" alt="hackbeanpot live site logo components" />
+        </div>
+        <div class="card__body">
+          <h4>HackBeanpot</h4>
+          <p class="subtitle mb-2 text-muted">August 2020</p>
+          <p>In collaboration with Nat Hsu, logo designs for hackathon resource folders</p>
+        </div>
+      </div>
+           <!-- card -->
+       <div class="card">
+        <div class="card__img">
+          <img src="./components/assets/uip_logo.png" alt="Build for Black Lives logos" />
+        </div>
+        <div class="card__body">
+          <h4>Uprooted Igorots Podcast</h4>
+          <p class="subtitle mb-2 text-muted">August 2020</p>
+          <p>Three logo assets for the podcast platform and socials</p>
+        </div>
+      </div>  
+<!-- card -->
+<div class="card">
+    <div class="card__img">
+      <img src="./components/assets/icons.png" alt="Uprooted Igorots Logos" />
+    </div>
+    <div class="card__body">
+      <h4>Build for Black Lives</h4>
+      <p class="subtitle mb-2 text-muted">Summer 2020</p>
+      <p>Iconography set used for social media posts and graphics</p>
+    </div>
+  </div>  
+  <!-- card -->
+  <div class="card">
+    <div class="card__img">
+      <img src="./components/assets/sweets.png" alt="Logo Designs for Mr.Nice Guy Sweets & Treats" />
+    </div>
+    <div class="card__body">
+      <h4>Mr.Nice Guy Sweets & Treats</h4>
+      <p class="subtitle mb-2 text-muted">Spring 2020</p>
+      <p>Two iterations side by side. Design used for socials, stickers, and packaging.</p>
+    </div>
+  </div>  
+    </div>
+ 
+       
+       
+</div>
+<div id="brand">
+
+</div>
+
+    </main>
+    <footer id="socials"> 
+ 
+          <ul>
+            <li>
+              <a href="https://instagram.com/isuratmo" target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Ulam22" target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/sambros" target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+           
+          </ul>
+
+    </footer>
+    <script>
+        gsap.fromTo(
+          "#rise",
+          { opacity: 0, y: 10 },
+          { duration: 1, opacity: 1, y: 0}
+        );
+        
+        gsap.fromTo(
+          "#rise2",
+          { opacity: 0, y: 60 },
+          { delay: 1, duration: 1, opacity: 1, y: 0}
+        );
+      </script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+@use 'scss/global';
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 0 0 0 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: none;
+}
+
+nav img {
+  width: 36px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#intro {
+  padding: 8rem 0;
+}
+
+#gallery {
+  -webkit-clip-path: polygon(0 0, 0 80%, 100% 0, 100%, 0 100%);
+          clip-path: polygon(0 0, 0 80%, 100% 0, 100%, 0 100%);
+  padding: 2rem 0;
+  background-color: #2463a6;
+  color: #f1ece4;
+}
+
+#gallery h1 {
+  margin: 2rem 0;
+}
+
+#gallery .svg {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+#gallery .card__body {
+  color: #0e1c2f;
+}
+
+#gallery .card {
+  margin: 1.2rem;
+}
+
+footer {
+  border: none;
+}
+
+.card {
+  -webkit-box-shadow: 0 3px 10px 0 rgba(44, 43, 43, 0.1);
+          box-shadow: 0 3px 10px 0 rgba(44, 43, 43, 0.1);
+  border-radius: 5px;
+}
+
+.card .card__body {
+  background-color: #f1ece4;
+  border-radius: 0 0 8px 8px;
+}
+/*# sourceMappingURL=uma.css.map */

@@ -1,0 +1,54 @@
+@use 'scss/global';
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  padding: 0 0 0 1rem;
+  justify-content: space-between;
+  border-bottom: none;
+  img {
+    width: 36px;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+#intro {
+   padding:8rem 0;
+}
+#gallery {
+    h1 {
+        margin:2rem 0;
+    }
+    clip-path: polygon(0 0, 0 80%, 100% 0, 100%, 0 100%);
+  padding: 2rem 0;
+  background-color: #2463a6;
+  color:#f1ece4;
+  .svg {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .card__body{
+      color:#0e1c2f;
+  }
+  
+  .card {
+      margin:1.2rem;
+  }
+}
+
+footer {
+    border:none;
+}
+
+.card {
+    box-shadow: 0 3px 10px 0 rgba(rgb(44, 43, 43), 0.1);
+    border-radius: 5px;
+    .card__body {
+        background-color: #f1ece4;
+        border-radius: 0 0 8px 8px;
+    }
+}
